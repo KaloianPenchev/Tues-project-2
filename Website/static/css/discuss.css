@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{   
+    font-family: "Raleway";
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.nav-left{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0%;
+    left: 3%;
+    height: 100%;
+    width: 40%;
+    color: white;
+    
+}
+
+.logo{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 10%;
+}
+
+.nav-mid{
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    height: 100%;
+    width: 50%;
+    font-size: 0.3vw;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10%;
+    
+}
+
+.nav-links li, .nav-links a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+    opacity: 0.5;
+}
+.nav-right{
+    position: absolute;
+    left: 74%;
+    top: 0%;
+    height: 100%;
+    width: 26%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.btn-header-1{
+    margin-left: -7%;
+    background-color: #e25c5a;
+    width: 50%;
+    height: 7vh;
+    border-radius: 0.4vw;
+    border: none;
+    font-size: 1.3vw;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-header-2{
+    margin-left: -7%;
+    background-color: white;
+    border: none;
+}
+.userPng{
+    margin-left: -30%;
+    width: 2.5vw;
+    height: 5vh;
+}
+
+.expandImg1{
+    margin-left: -4vw;
+    margin-bottom: 15%;
+    width: 1.5vw;
+    height: 2.2vh;
+}
+.dropdown{
+    position: absolute;
+    top: 86%;
+    right: 8%;
+    border-radius: 0.5vw;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 2px 2px 2px rgb(0, 0, 0, 0.1);
+    padding: 2% 5%;
+    
+}
+
+.dropdown span{
+    display: flex;
+    justify-content: center;
+}
+.dropdown ul{
+    margin-left: -10%;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    cursor: pointer;
+}
+.dropdown li{
+    margin-bottom: 10%;
+}
+
+.logOutBtn{
+    margin-left: 25%;
+    background-color: white;
+    border-width: 0.1vw;
+}
+.dropdown li:hover , .logOutBtn:hover{
+    opacity: 0.5;
+}
+
+.left-section{
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    bottom: 0%;
+    border-right: 0.1px solid rgb(61, 47, 47);
+    max-width: 20%;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    overflow: hidden;
+    
+}
+
+.left-head{
+    font-size: 1.3vw;
+    margin-bottom: 8%;
+    margin-left: -15%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.left-main{
+
+}
+.left-main h1{
+    margin-left: 7%;
+    font-size: 1.6vw;
+}
+
+.list1 , .list2{
+    margin-bottom: 12%;
+    margin-left: -15%;
+    margin-top: 8%;
+}
+
+.list1 li, .list2 li{
+    font-size: 1.5vw;
+    margin-bottom: 3.5%;
+    margin-left: -2%;
+}
+.list1 li i, .list2 li i{
+    margin-right: 2%;
+}
+
+.expandBtn1, .expandBtn2{
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -13%;
+    margin-left: -3%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.left-footer{
+    position: absolute;
+    bottom: 2%;
+    right: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+.left-footer i{
+    width: 20%;
+    height: 20%;
+}
+
+.right-section{
+    position: absolute;
+    left:17%;
+    top: 17%;
+    right: 0%;
+    bottom: 0%;
+    overflow-x: auto;
+}
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters input{
+    height: 5vh;
+    width: 10vw;
+    border: 1px solid black;
+    padding: 0% 1% 0% 1%;
+}
+.filters input::placeholder{
+    color: black;
+}
+
+.filters ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: -4%;
+}
+.filters li{
+    padding-left: 10%;
+    text-decoration: underline;
+}
+.filters button{
+    margin-left: 26%;
+    border: none;
+    padding: 1% 1% 1% 1%;
+    border-radius: 0.3vw;
+    background-color: #eaeaea;
+    font-size: 1.2vw;
+}
+
+.tablediscuss{
+    position: absolute;
+    margin-top: 1.5%;
+    left: 10%;
+    width: 88%;
+    border-collapse: collapse;
+}
+
+.tablehead {
+    background-color: #f2f2f2;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: 10vh;
+}
+.tablehead th {
+    padding: 10px;
+    text-align: left;
+}
+.tablerow {
+    border-bottom: 1px solid #ddd;
+    
+}
+.tablerow th, .tablerow td {
+    padding: 20px;
+    text-align: left;
+}
+
+.tablerow td:hover{
+    text-decoration: underline;
+}

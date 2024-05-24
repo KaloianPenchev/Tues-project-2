@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/quest.css') }}"/> 
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
+    <title>Questions</title>
+</head>
+<body onload="load()">
+    <header>
+        <a href="/homepage">
+            <img class="back"src="{{ url_for('static', filename='pictures/back.png') }}" style="position: absolute;top: 30%;left: 2%;">
+        </a> 
+    
+        <img class="back"src="{{ url_for('static', filename='pictures/back.png') }}" style="position: absolute;top: 30%;left: 57%;">
+        <p style="position: absolute;top: 18.5%;left: 60%; color:white" >Prev</p>
+        <div style="position:absolute; top:44%;left:62%; width: 30%; height: 50%; display: flex;">
+            <div class="progress"></div>
+            <div class="progress"></div>
+            <div class="progress-n"></div>
+            <div class="progress-n"></div>
+            <div class="progress-n"></div>
+            <div class="progress-n"></div>
+        </div>
+        <p style="position: absolute;top: 18.5%;left: 93%; color:white">Next</p>
+        <img class="back"src="{{ url_for('static', filename='pictures/back.png') }}" style="position: absolute;top: 29%;left: 96%;transform: rotate(180deg);">
+            
+        
+    </header>
+    <div id="under-head">
+        <div id="left-under-head">
+            <button class="option">Question</button>
+            <button class="option">Previous submissions</button>
+            <button class="option">Solution</button>
+            <button class="option">Help from AI</button>
+        </div>
+        <div id="right-under-head">
+      
+            <select id="programming-languages" onchange="change()">
+                <option value="c++">C++</option>
+                <option value="python">Python</option>
+                <option value="c#">C#</option>
+                <option value="go">Go</option>
+            </select>
+
+        </div>
+    </div> 
+    <div id="main">
+        <div id="left">
+            <h2>Color the graph</h2>
+            <h5>Given is a graph with N vertices and N directed edges, such that no vertex has more than one edge incident on it.</h5>
+            <h5>Write a program called "color" that determines the minimum number of colors needed to color the edges so that for each vertex, the edges incident on it have different colors.</h5>
+            <h3>Input</h3>
+            <ul class="io">
+                <li style="margin-top: -3%;"><h5>On the first line of the standard input, a number T is specified - the number of test cases. Following are T pairs of lines. </h5></li>
+                <li style="margin-top: -3.4%;"><h5>On the first line of each pair is the number N - the number of vertices for this test. On the next line are N numbers Xi, separated by spaces. </h5></li>
+                <li style="margin-top: -3.4%;"><h5> The number Xi written at the i-th position indicates that the graph has a directed edge from vertex Xi to vertex i, where i = 1, 2, ..., N.</h5></li>
+            </ul>
+            <h3>Output</h3>
+            <h5>For each test case, the program outputs on a separate line the sought minimum number of colors.</h5>
+            <h3>Costraints</h3>
+            <ul >
+                <li style="margin-top: -3%;"><h5>1 ≤ Т ≤ 10</h5></li>
+                <li style="margin-top: -3.4%;"><h5>2 ≤ N ≤ 100000</h5></li>
+                <li style="margin-top: -3.4%;"><h5>1 ≤ Xi ≤ N</h5></li>
+                <li style="margin-top: -3.4%;"><h5>Xi ≠ i</h5></li>
+            </ul>
+            <h3>Sample 1:</h3>
+            <div style="display: flex; height: 30%; width: 55%;border-style: solid;border-width: 0.5px;">
+                <div style="width: 46%;height:100%;margin-left: 4%; border-style: none solid none none;border-right-width: 0.5px;">
+                    <h5 style="border-style: none none solid; border-bottom-width: 0.5px;">Input</h5>
+                    <h5 id="sample">2<br>4<br>4 1 2 3<br>5<br>4 1 2 3 4</h5>
+                </div>
+                <div style="width: 46%;height: 100%; margin-left: 4%;">
+                    <h5 style=" border-bottom-width: 0.5px;border-style: none none solid; border-bottom-width: 0.5px;">Output</h5>
+                    <h5 id="sample">2<br>3</h5>
+                </div>
+            </div>
+            <br>
+            <br>
+        
+        </div>
+        <div id="right">
+            <div id="right-code">
+                <textarea id="code" style="resize: none;" ></textarea>
+            </div>
+            <div id="test">
+                <textarea id="custom" style="resize: none;"></textarea>
+            </div>
+            
+            <div id="code-buttons">
+                
+                <button class="but">Run</button>
+                <button class="but">Submit</button>
+                <button class="but">Next</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function load(){
+            document.getElementById("custom").value="Your output";
+            document.getElementById("code").value="#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n\t// your code goes here\n\treturn 0;\n}";
+        }
+        function change(){
+            let chosen = document.getElementById("programming-languages").value;
+            if(chosen === "c++"){
+                document.getElementById("code").value="#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n\t// your code goes here\n\treturn 0;\n}";
+            }else if(chosen === "python"){
+                document.getElementById("code").value="";
+            }else if(chosen === 'c#'){
+                document.getElementById("code").value="using System;\n\npublic class Test\n{\n\tpublic static void Main()\n\t{\n\t\t// your code goes here\n\t}\n}";
+            }else if(chosen === "go"){
+                document.getElementById("code").value='package main\nimport "fmt"\n\nfunc main(){\n\t// your code goes here\n}';
+            }
+        }
+    </script>
+    <div></div>
+</body>
+
+</html>

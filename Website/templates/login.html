@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"> 
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
+    <title>Login</title>
+
+</head>
+<body>
+    <section class="form-section">
+        <h1>Login</h1>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Email" name="email">
+            <input type="password" placeholder="Password" name="password">
+
+            <button type="submit" name="login" style="text-decoration: none;">
+                Login
+            </button>
+         </form>
+        
+        <div class="member">
+            Don't have an account? <a href="/register">
+                <h4 style="margin-top: 3.45%">
+                    Register here
+                </h4>
+            </a>
+        </div>
+    </section>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

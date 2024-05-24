@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-left">
+            <img class="logo" src="{{ url_for('static', filename='pictures/logo1.png') }}">
+        </div>
+        
+        <div class="nav-mid">
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/discuss">Discuss</a></li>
+                <li><a href="/practice">Practice</a></li>
+                <li><a href="/tests">Tests</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            
+            <button class="btn-header-1">
+                GO PREMIUM ⚡
+            </button>
+            
+            <button class="btn-header-2">
+                <img class="userPng" src="{{ url_for('static', filename='pictures/user.png') }}">
+            </button>
+           
+            <button class="btn-header-2" onclick="btnFunc(this)">
+                <img class="expandImg1" src="{{ url_for('static', filename='pictures/caret-down.png') }}">
+            </button>
+            
+            <div class="dropdown" style="display: none;">
+                <span>kaloianpenchev</span>
+                <hr>
+                <ul>
+                    <li>My Profile</li>
+                    <li>Edit Profile</li>
+                    <li>My Certificates</li>
+                </ul>
+                <hr>
+                <a href="/logout">
+                    <button class="logOutBtn">
+                        LOGOUT
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+    
+    <div> 
+
+        <h1 class="title1">Continue Your Learning</h1>
+       
+        <section class="progressBox">
+            <div class="LogoAndHeading">
+                    <img class="C-logo" src="{{ url_for('static', filename='pictures/c-piuc-for-home-page.png') }}" alt="c language pic" width="10%">
+        
+                    <h2 class="HeadingProgress">STLs in C</h2>
+            
+                    <div class="HardnessBox">
+                        <p>Beginner</p>
+                    </div>
+
+                    <div class="progressBarDirections">
+                        <meter value="0.1" class="progressBar"></meter>
+                    </div>
+
+                <p class="Module">Current module: vectors and iterators</p>
+                    <button class="ContinueButton">Continue</button>
+            </div>             
+        </section>
+
+        <h1 class="title2">Continue Your Courses</h1>
+
+        <div class="CoursesDirectionsB">
+            <a  href="/courses">
+                <button class="CoursesButton">All Courses</button>
+            </a>
+        </div>
+
+        <section>
+            <div class="PythonCourseBox">
+                <div class="top-half-python"></div>
+                <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+
+                <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+
+                <p>600 Problems • 50K+ Learners</p>
+
+                <p>Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="HtmlCourseBox">
+                <div class="top-half-html"></div>
+                <img class="HtmlLogo" src="{{ url_for('static', filename='pictures/html-pic-for-home-page.jpg') }}" width="25%">
+
+                <h2 class="HtmlTitle">Learn frontend development using HTML / CSS / JS</h2>
+
+                <p>406 Problems • 20K+ Learners</p>
+
+                <p>Are you a complete beginner in Web Development? Follow our web development and become a pro Web Developer</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="CPlusCourseBox">
+                <div class="top-half-cplus"></div>
+                <img class="CPlusLogo" src="{{ url_for('static', filename='pictures/c++-pic-for-home-page.png') }}" width="25%">
+
+                <h2 class="CPlusTitle">Complete C++ language Roadmap</h2>
+
+                <p>616 Problems • 80K+ Learners</p>
+
+                <p>Havo you tried multiple courses C++ but are still not able to convert your logic to code in C++?</p>
+            </div>
+        
+            <h1 class="title3">Assess Yourself</h1>
+
+            <section>
+                <div class="StartersBox">
+                    <div>
+                        <h2 class="StartersTitle">Starters 135</h2>
+                    </div>
+                    <div>
+                        <p class="StartInText">Starts In</p>
+                    </div>
+                    <div>
+                        <h3 class="TimeToContest">5 days 13 hrs</h3>
+                    </div>
+                    <div>
+                        <button class="ContestButton">View Contest</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="SkillTestBox">
+                    <div>
+                        <h2 class="SkillTestTitle">Skill Tests</h2>
+                    </div>
+                    <div>
+                        <p class="SkillDescription">Test your programming skills. Get instant results and course suggestions</p>
+                    </div>
+                    <div>
+                        <h3 class="TimeToTest">No live</h3>
+                    </div>
+                    <div>
+                        <button class="ViewTestButton">View all tests</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="DailyStreakBox">
+                    <div>
+                        <h1 class="DailyTitle">Daily Streak</h1>
+                        <button class="ViewProfileButton">View profile</button>
+                    </div>
+                    <div class="DiffStreaks">
+                        <div class="Current">
+                            <p class="StreakTitle">Current</p>
+                            <h2 class="CurrentStreakTime">0 days</h2>
+                        </div>
+                        <div class="Longest">
+                            <p class="StreakTitle">Longest</p>
+                            <h2 class="LongestStreakTime">11 days</h2>
+                        </div>
+                        <div class="Freezes">
+                            <p class="StreakTitle">Freezes</p>
+                            <h2 class="FreezesLeft">0 left</h2>
+                        </div>
+                    </div>
+                            <div class="WeekTable" >
+                                    <h2 class="Weekday">M</h2>
+                                    <h2 class="Weekday">T</h2>
+                                    <h2 class="Weekday">W</h2>
+                                    <h2 class="Weekday">T</h2>
+                                    <h2 class="Weekday">F</h2>
+                                    <h2 class="Weekday">S</h2>
+                                    <h2 class="Weekday" id="Today">S</h2>
+                            </div>
+                    </div>
+            </section>
+
+            <section>
+                <div class="ManageBookmarksBox">
+                    <h1 class="ManageTitle">Manage Bookmarks</h1>
+
+                    <p class="BookmarksText">You have not bookmarked any problem yet.</p>
+
+                    <a href="">Know more</a>
+
+                    <button class="ManageBookmarksButton">View all</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="ManageBookmarksBox">
+                    <h1 class="ManageTitle">Discuss Notifications</h1>
+
+                    <p class="Notifications">No New Notifications</p>
+
+                    <button class="DiscussViewAllButton">View all</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="ManageBookmarksBox">
+                    <h1 class="ManageTitle">Explore Our Blogs Today</h1>
+
+                    <p class="ReadAboutExplore">Read blogs about various topics in programming. Get expert guidance from CodeTues on coding</p>
+
+                    <button class="ExploreViewAllButton">View all</button>
+                </div>
+            </section>
+    </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Learning Courses</h4>
+                        <ul>
+                            <li><a href="#">Learning Problems</a></li>
+                            <li><a href="#">CodeTues Discuss</a></li>
+                            <li><a href="#">Practice Problems</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Programming Tools</h4>
+                        <ul>
+                            <li><a href="#">Online IDE</a></li>
+                            <li><a href="#">Coding Contests</a></li>
+                            <li><a href="#">Host Rated Contest</a></li>
+                            <li><a href="#">Problem Setting</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="#">CodeTues For Colleges</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Code Of Conduct</a></li>
+                            <li><a href="#">User Ranklist</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+       <script>
+        function btnFunc(button) {
+            var panel = button.nextElementSibling;
+            var img = button.querySelector('.expandImg1');
+            
+            if (panel.style.display === "none") {
+                panel.style.display = "block";
+                img.src = "{{ url_for('static', filename='pictures/caret-up.png') }}";
+            } else {
+                panel.style.display = "none";
+                img.src = "{{ url_for('static', filename='pictures/caret-down.png') }}";
+                
+            }
+            
+        }
+    
+    </script>
+
+</body>
+</html>

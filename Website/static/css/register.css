@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{   
+    font-family: "Raleway";
+    font-weight: 400;
+    font-style: normal;
+    
+}
+body{
+    background-image: url(https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/programming%20evolution.jpg?itok=WTj9-yNz);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+    height: 100%;
+ }
+
+ .flashes{
+    
+    list-style: none;
+    z-index: 1;
+    font-size: 2vw;
+    border-radius: 0.3vw;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: red;
+}
+
+.form-section{
+    margin: auto auto auto auto;
+    width: 22%;
+    height: 60vh;
+    padding: 2rem 1rem;
+    margin: 10% auto;
+    background-color: #fff;
+    border-radius: 2vw;
+    text-align: center;
+    box-shadow: 6px 6px 6px rgba(0 , 0, 0, 0 , 1);
+}
+.form-section h1{
+    font-size: 3vw;
+    color: black;
+    margin-top: -2%;
+}
+form input{
+    width: 80%;
+    outline: none;
+    padding: 1px solid #fff;
+    margin-bottom: 5%;
+    border-radius: 1.5vw;
+    padding: 3% 5% 3% 5%;
+    border: none;
+    font-size: 1.3vw;
+    background-color: rgb(236, 235, 235);
+}
+.form-section button{
+    background-color: rgb(48, 48, 186);
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 2vw;
+    width: 70%;
+    height: 10%;
+    margin-top: 5%;
+}
+.form-section button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.member{
+    font-size: 1.4vw;
+    margin-top: 6%;
+}

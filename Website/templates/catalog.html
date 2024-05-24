@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/catalog.css') }}"/> 
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-left">
+            <img class="logo" src="{{ url_for('static', filename='pictures/logo1.png') }}">
+        </div>
+        
+        <div class="nav-mid">
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/discuss">Discuss</a></li>
+                <li><a href="/practice">Practice</a></li>
+                <li><a href="/tests">Tests</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn-header-1">
+                GO PREMIUM ⚡
+            </button>
+            
+            <button class="btn-header-2">
+                <img class="userPng" src="{{ url_for('static', filename='pictures/user.png') }}">
+            </button>
+           
+            <button class="btn-header-2" onclick="btnFunc(this)">
+                <img class="expandImg1" src="{{ url_for('static', filename='pictures/caret-down.png') }}">
+            </button>
+            
+            <div class="dropdown" style="display: none;">
+                <span>kaloianpenchev</span>
+                <hr>
+                <ul>
+                    <li>My Profile</li>
+                    <li>Edit Profile</li>
+                    <li>My Certificates</li>
+                </ul>
+                <hr>
+                <a href="/logout">
+                    <button class="logOutBtn">
+                        LOGOUT
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+    <div id="main">
+        <div id="main-left">
+            <p id="topic">Topics</p>
+            <ul>
+                <li class="lang">Python</li>
+                <li class="lang">Java</li>
+                <li class="lang">C and C++</li>
+                <li class="lang">C#</li>
+                <li class="lang">JavaScript</li>
+                <li class="lang">SQL</li>
+                <li class="lang">PHP</li>
+                <li class="lang">Go</li>
+                <li class="lang">Kotlin</li>
+                <li class="lang">MATLAB</li>
+                <li class="lang">R</li>
+                <li class="lang">Swift</li>
+            </ul>
+        </div>
+        <div id="main-right">
+            <div class="coulumn"style="margin-right: 8%;">
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+            </div>
+            <div class="coulumn" style="margin-right: 8%;">
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+            </div>
+            <div class="coulumn"style="margin-right: 8%;">
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+                <div class="PythonCourseBox">
+                    <div class="top-half-python"></div>
+                    <img class="PythonLogo" src="{{ url_for('static', filename='pictures/Python-logo-notext.svg.png') }}" width="25%">
+        
+                    <h2 class="PythonTitle">Master Data Analytics Using Python</h2>
+        
+                    <p class="py">600 Problems • 50K+ Learners</p>
+        
+                    <p class="py">Learn Python using plenty of real life case studies and become ready to analyse any data whatsoever</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Learning Courses</h4>
+                    <ul>
+                        <li><a href="#">Learning Problems</a></li>
+                        <li><a href="#">CodeTues Discuss</a></li>
+                        <li><a href="#">Practice Problems</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programming Tools</h4>
+                    <ul>
+                        <li><a href="#">Online IDE</a></li>
+                        <li><a href="#">Coding Contests</a></li>
+                        <li><a href="#">Host Rated Contest</a></li>
+                        <li><a href="#">Problem Setting</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">CodeTues For Colleges</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Code Of Conduct</a></li>
+                        <li><a href="#">User Ranklist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function btnFunc(button) {
+            var panel = button.nextElementSibling;
+            var img = button.querySelector('.expandImg1');
+            
+            if (panel.style.display === "none") {
+                panel.style.display = "block";
+                img.src = "{{ url_for('static', filename='pictures/caret-up.png') }}";
+            } else {
+                panel.style.display = "none";
+                img.src = "{{ url_for('static', filename='pictures/caret-down.png') }}";
+                
+            }
+            
+        }
+    
+    </script>
+</body>
+</html>

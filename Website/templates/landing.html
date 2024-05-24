@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CodeTues</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="nav-left">
+            <img class="logo" src="{{ url_for('static', filename='pictures/logo1.png') }}">
+        </div>
+        
+        <div class="nav-mid">
+            <ul class="nav-links">
+                
+                <li><a href="#colleges">Colleges</a></li>
+                <li><a href="#start_now">Start now</a></li>
+                <li><a href="#go_pro">Go Pro</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            
+            <button class="btn-header-1"><a href="/login">Login</a></button>
+            <button class="btn-header-2"><a href="/register">Sign up</a></button>
+            
+        </div>
+    </header>
+    
+    <section>
+        <div class="first-section-left">
+            <div class="first-section-title"> 
+                
+                <h1 class="first-line" style="font-weight: 600;">
+                    Start your 
+                    <span class="second-line" style="font-weight: 600;">coding journey</span> 
+                    <span class="second-line" style="font-weight: 600;">today</span>
+                </h1>
+                <h3 class="first-line">
+                    Learn to code from scratch with job focussed 
+                    <span class="second-line">courses designed by experts</span>
+                </h3>
+            
+            </div>
+        
+
+            <div class="first-section-register">
+                
+                <div class="inputs">
+                    <input class="input-1" type="text" placeholder="Enter email">
+                    <input class="input-2" type="text" placeholder="Start learning today  ⚡" disabled>
+                </div>
+                
+                <h1 class="first-line" style="font-size: 1.5vw;margin-top: 5.5%;">
+                    or sign up
+                    <span class="second-line">with</span>
+                </h1>
+                
+                <div class="register-with-others">
+                    <button>
+                        <i id="iconRegister" class='bx bxl-google'></i>
+                        <a>Google</a>
+                    </button>
+                    
+                    <button>
+                        <i id="iconRegister" class='bx bxl-github' ></i>
+                        <a>Github</a>
+                    </button>
+                    
+                    <button>
+                        <i id="iconRegister" class='bx bxl-facebook' ></i>
+                        <a>Facebook</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="first-section-right">
+            <img src="{{ url_for('static', filename='pictures/coding_boy.png') }}">
+        </div>
+    </section>
+    
+    <section >
+        <div class="second-section" id="colleges">
+            <img class="second-section-img" src="{{ url_for('static', filename='pictures/students.jpg') }}">
+            <div class="second-section-mid">
+                <div class="second-section-description">
+                    <h3 class="first-line">
+                        <h2 style="color: white; font-size: 3vw;">CodeTues for colleges</h2>
+                        <span class="second-line" style="color: white;font-size: 1.5vw;">Teach industry relevant subjects like Data structures,</span>
+                        <span class="second-line" style="color: white;font-size: 1.5vw;">Algorithms, Web development and SQL to your students.</span>
+                    </h3>
+                    
+                    <button class="second-section-btn">
+                        Get in touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="third-section" id="start_now">
+            <h1 style="font-size: 3vw;">Write your first code with us. ✨</h1>
+            
+            <button class="third-section-btn">
+                Start learning today  ⚡
+            </button>
+            
+            <img class="third-section-img" src="{{ url_for('static', filename='pictures/learnToCode.png') }}">
+
+        </div>
+    </section>
+
+    <section >
+        <div class="fourth-section" id="go_pro">
+            <div class="fourth-section-mid">
+                <img class="fourth-section-img" src="{{ url_for('static', filename='pictures/thinker.png') }}">
+                
+                <div class="fourth-section-description">
+                    <h3 class="first-line">
+                        <h2 style="color: #2e3446; font-size: 3vw;">Get CodeTues  Pro</h2>
+                        <span class="second-line" style="font-size: 1.5vw;">Build real world projects based on what you learn with</span>
+                        <span class="second-line" style="font-size: 1.5vw;">Pro subscription. Unlock special features</span>
+                    </h3>
+                    
+                    <button class="fourth-section-btn">
+                        Go Pro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Learning Courses</h4>
+                    <ul>
+                        <li><a href="#">Learning Problems</a></li>
+                        <li><a href="#">CodeTues Discuss</a></li>
+                        <li><a href="#">Practice Problems</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programming Tools</h4>
+                    <ul>
+                        <li><a href="#">Online IDE</a></li>
+                        <li><a href="#">Coding Contests</a></li>
+                        <li><a href="#">Host Rated Contest</a></li>
+                        <li><a href="#">Problem Setting</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">CodeTues For Colleges</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Code Of Conduct</a></li>
+                        <li><a href="#">User Ranklist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <script src="landing.js"></script>
+
+</body>
+</html>

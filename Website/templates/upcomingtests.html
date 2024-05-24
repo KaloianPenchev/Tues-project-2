@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='pictures/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upcomingtests.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-left">
+            <img class="logo" src="{{ url_for('static', filename='pictures/logo1.png') }}">
+        </div>
+        
+        <div class="nav-mid">
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/discuss">Discuss</a></li>
+                <li><a href="/practice">Practice</a></li>
+                <li><a href="/tests">Tests</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn-header-1">
+                GO PREMIUM ⚡
+            </button>
+            
+            <button class="btn-header-2">
+                <img class="userPng" src="{{ url_for('static', filename='pictures/user.png') }}">
+            </button>
+           
+            <button class="btn-header-2" onclick="btnFunc(this)">
+                <img class="expandImg1" src="{{ url_for('static', filename='pictures/caret-down.png') }}">
+            </button>
+            
+            <div class="dropdown" style="display: none;">
+                <span>kaloianpenchev</span>
+                <hr>
+                <ul>
+                    <li>My Profile</li>
+                    <li>Edit Profile</li>
+                    <li>My Certificates</li>
+                </ul>
+                <hr>
+                <a href="/logout">
+                    <button class="logOutBtn">
+                        LOGOUT
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+    <div>
+        <br><br><br><br><br><br><br>
+        <h1 class="zaglavie">Upcoming Tests</h1>
+        <br>
+    </div>
+    <table class="thewholetable" width="1500">
+        <tr class="headerrow">
+            <th>Code</th>
+            <th>Level</th>
+            <th>Start</th>
+            <th>Duration</th>
+            <th>Starts in</th>
+        </tr>
+        <tr class="row2">
+            <td>Python</td>
+            <td>Beginner</td>
+            <td>14 May 2024   Tuesday 16:30</td>
+            <td>1 hr 30 min</td>
+            <td>8 days 4 hrs</td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
+        </tr>
+        <tr class="row2">
+            <td>C++</td>
+            <td>Intermediate</td>
+            <td>17 May 2024   Friday 11:15</td>
+            <td>2 hrs</td>
+            <td>10 days 23 hrs</td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
+        </tr>
+        <tr class="row2">
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+            <td>15 May 2024   Wednesday 14:00</td>
+            <td>2 hrs</td>
+            <td>9 days 21 hrs</td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
+        </tr>
+        <tr class="row2">
+            <td>C#</td>
+            <td>Intermediate</td>
+            <td>23 May 2024   Thursday 15:45</td>
+            <td>2 hrs 30 min</td>
+            <td>17 days 3 hrs</td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
+        </tr>
+        <tr class="row2">
+            <td>Java</td>
+            <td>Advanced</td>
+            <td>17 May 2024   Friday 10:00</td>
+            <td>3 hrs</td>
+            <td>11 days 16 hrs</td>
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
+        </tr>
+        
+        <tr class="row2">
+            <td>HTML</td>
+            <td>Beginner</td>
+            <td>20 May 2024   Monday 09:30</td>
+            <td>1 hr 45 min</td>
+            <td>14 days 15 hrs</td>
+
+            <td class="BellRow">
+                <button class="buttomBell" onclick="openPopup(this)">
+                    <img src="{{ url_for('static', filename='pictures/bell.svg') }}" class="kambanka">
+                </button>
+            </td>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>Your next contest has been added to your calendar. A notification will pop out 30 minutes before the test.</p>
+                </div>
+            </div>
+            
+        </tr>
+
+    </table>
+    <footer>
+        
+        <div>
+            <ul class="SocialIcons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="FooterLinks">
+                <a class="footerButton" href=""><li">Home</li></a>
+                <a class="footerButton" href=""><li">News</li></a>
+                <a class="footerButton" href=""><li">About</li></a>
+                <a class="footerButton" href=""><li">Contact us</li></a>
+                <a class="footerButton" href=""><li">Our team</li></a>
+            </ul>
+            </div>
+    </footer>
+
+    <script>
+        function btnFunc(button) {
+            var panel = button.nextElementSibling;
+            var img = button.querySelector('.expandImg1');
+            
+            if (panel.style.display === "none") {
+                panel.style.display = "block";
+                img.src = "{{ url_for('static', filename='pictures/caret-up.png') }}";
+            } else {
+                panel.style.display = "none";
+                img.src = "{{ url_for('static', filename='pictures/caret-down.png') }}";
+                
+            }
+            
+            
+        }
+        function openPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
